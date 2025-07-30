@@ -27,8 +27,8 @@ body {
 }
 
 .card-info {
-    background-color: #00bcd4; /* celeste */
-    color: white;
+    background-color: #5fa2a2;
+    color: #e7e1ca;
     padding: 10px;
     text-align: left;
 }
@@ -43,9 +43,10 @@ body {
     font-size: 14px;
 }
 
+
 .sticky-header {
-    position: sticky;
-    top: 0;
+    /*position: sticky;
+    top: 0;*/
     background-color: #092c64;
     z-index: 1000;
     text-align: center;
@@ -54,11 +55,57 @@ body {
 }
 
 .header-img {
-    max-height: 120px;
-    transition: all 0.3s ease;
+    max-height: 160px;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
 .sticky-header.shrink .header-img {
     max-height: 50px;
     opacity: 0.9;
+}
+
+.main-content {
+    padding-top: 180px;
+}
+
+.contenedor{
+    max-width:10000px;
+    margin: auto;
+}
+
+.contenedor-menu{
+    position: sticky;
+    top: 0;
+}
+
+.contenedor nav {
+    background: #e7e1ca;
+}
+
+.contenedor nav .menu{
+    list-style: none;
+    text-align: center;
+}
+.contenedor nav .menu li{
+    display: inline-block;
+}
+
+.contenedor nav .menu li a {
+    color: #092c64;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    font-family: Rockwell, Courier Bold, Courier, Georgia, Times, Times New Roman, serif;
+}
+
+.contenedor nav .menu li a:hover     {
+    background: #e7e1ca;
+    color: #5fa2a2;
+}
+
+.contenedor article {
+    margin: 20px 0;
+    background: rgb(18, 18, 170);
+    padding: 20px;
 }
